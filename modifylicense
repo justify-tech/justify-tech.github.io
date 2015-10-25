@@ -86,7 +86,22 @@
 <h6 class="center" > Samarth Sandeep </h6>
 
 <hr>
+<form class="col s12" id="createarticle">
+      
+  
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea" ></textarea>
+            <text for="textarea1"> All designs are available for use by any party. However, if used, the source of the design must be cited by APA standards in order to give at least reasonable credit to the original author. If a team is working on a project together, a document must be in order with exactly which changes were made by who. The people listed on this document own the finished design accompanied with it, giving each person who had contributed rights to their work.</text>
+          </div>
+        </div>
+          <a href="index.html"><button class="btn waves-effect waves-light" type="submit" name="action">Post Article
+          </i>
+        </button></a>
+        <br>
+        <br>
 
+    </form>
 <p  > All designs are available for use by any party. However, if used, the source of the design must be cited by APA standards in order to give at least reasonable credit to the original author. If a team is working on a project together, a document must be in order with exactly which changes were made by who. The people listed on this document own the finished design accompanied with it, giving each person who had contributed rights to their work.</p>
 
 
@@ -95,9 +110,9 @@
 
 <iframe src="https://www.moxtra.com/service/#timeline/BCCxARBx99gGpAuseC9f9AE" height="500" width="800"></iframe>
 
-<a href="modifylicense.html"><button class="btn waves-effect waves-light white red-text right"  name="action" id="bitproofstart">Adapt license for my use
+<button class="btn waves-effect waves-light white red-text right"  name="action" id="bitproofstart">Adapt license for my use
           </i>
-        </button></a>
+        </button>
 
   </div>
 
