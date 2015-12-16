@@ -21,7 +21,7 @@ Parse.initialize("pdhEyQFMtBm4wQVsd9aiznTNCyu95i5lLNafn0Iv", "9T8Ft0xHPZMD5Sn920
       data.title = $("#title").val();
       data.author = $("#author").val();
       data.articlebody= $("#textarea1").val();
-      // data.email = $("#email").val();
+       data.pubdate = $("#pubdate").val();
       // data.summary = $("#textarea").val();
 
       var comment = new article();
@@ -133,6 +133,33 @@ query.find({
                             var gate = results[i].get("author"); 
                             if(results[i].get("kind")=="article"){
                             document.getElementById("latestauthor").innerHTML = gate;
+                          }
+                         
+                          }
+
+                   }        
+          //Alerts are lame - but quick and easy
+
+    // Do something with the returned Parse.Object values
+
+  },
+  error: function(error) {
+    alert("Error: " + error.code + " " + error.message);
+  }
+});
+ var query = new Parse.Query(article);
+         query.exists("kind","article");
+query.find({
+  success: function(results) {
+       
+         if (results.length > 0) 
+                   {              
+                   console.log("Success");                     
+                              for (var i = 0; i < results.length; i++){
+                            var objectId = results[i].id;   
+                            var gate = results[i].get("pubdate"); 
+                            if(results[i].get("kind")=="article"){
+                            document.getElementById("latestdate").innerHTML = gate;
                           }
                          
                           }
