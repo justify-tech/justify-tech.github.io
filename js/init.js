@@ -102,12 +102,14 @@ query.find({
                    {              
                    console.log("Success");                     
                               for (var i = 0; i < results.length; i++){
+                              var securityCheck = results[i].get("realarticle");
+                              if(securityCheck == "YES"){
                             var objectId = results[i].id;   
                             var gate = results[i].get("title");    
                                        if(results[i].get("kind")=="article"){
                             document.getElementById("latesttitle").innerHTML = gate;
                           }
-                         
+                         }
                           }
 
                    }        
@@ -131,10 +133,12 @@ query.find({
                               for (var i = 0; i < results.length; i++){
                             var objectId = results[i].id;   
                             var gate = results[i].get("author"); 
+                                var securityCheck = results[i].get("realarticle");
+                              if(securityCheck == "YES"){
                             if(results[i].get("kind")=="article"){
                             document.getElementById("latestauthor").innerHTML = gate;
                           }
-                         
+                         }
                           }
 
                    }        
@@ -158,10 +162,12 @@ query.find({
                               for (var i = 0; i < results.length; i++){
                             var objectId = results[i].id;   
                             var gate = results[i].get("pubdate"); 
+                                var securityCheck = results[i].get("realarticle");
+                              if(securityCheck == "YES"){
                             if(results[i].get("kind")=="article"){
                             document.getElementById("latestdate").innerHTML = gate;
                           }
-                         
+                         }
                           }
 
                    }        
@@ -185,10 +191,12 @@ query.find({
                               for (var i = 0; i < results.length; i++){
                             var objectId = results[i].id;   
                             var gate = results[i].get("articlebody"); 
+                                var securityCheck = results[i].get("realarticle");
+                              if(securityCheck == "YES"){
                             if(results[i].get("kind")=="article"){
                             document.getElementById("latestbody").innerHTML = gate;
                           }
-                         
+                         }
                           }
 
                    }        
